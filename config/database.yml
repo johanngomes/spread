@@ -14,20 +14,21 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
-development:
+default: &default
   adapter: postgresql
-  encoding: unicode
-  database: spread_db
+  encoding: utf8
   pool: 5
   username: johann
   password:
-  host: localhost
+
+development:
+  <<: *default
+  database: project_development
 
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: spread_db_prod
-  pool: 5
-  username: johann
-  password:
-  host: localhost
+  <<: *default
+  database: project_test
+
+production:
+  <<: *default
+  database: project_production
