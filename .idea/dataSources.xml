@@ -4,7 +4,8 @@
     <data-source source="LOCAL" name="Rails spread: development" uuid="c0bba340-6ec2-4001-a916-f6af6c5f9d6d">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:db/development.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:postgresql:spread_db</jdbc-url>
+      <user-name>johann</user-name>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails spread: test" uuid="ff5e5513-232f-4602-a518-ea9dc5ff3bad">
