@@ -23,12 +23,12 @@ default: &default
 
 development:
   <<: *default
-  database: project_development
+  database: ddjftju9i27pho
 
 test:
   <<: *default
-  database: project_test
+  database: ddjftju9i27pho
 
 production:
   <<: *default
-  database: project_production
+  database: ddjftju9i27pho

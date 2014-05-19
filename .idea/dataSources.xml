@@ -4,21 +4,21 @@
     <data-source source="LOCAL" name="Rails spread: development" uuid="c0bba340-6ec2-4001-a916-f6af6c5f9d6d">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:project_development</jdbc-url>
+      <jdbc-url>jdbc:postgresql:ddjftju9i27pho</jdbc-url>
       <user-name>johann</user-name>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails spread: test" uuid="ff5e5513-232f-4602-a518-ea9dc5ff3bad">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:project_test</jdbc-url>
+      <jdbc-url>jdbc:postgresql:ddjftju9i27pho</jdbc-url>
       <user-name>johann</user-name>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails spread: production" uuid="577faa04-cd9d-404e-bb34-b88ea18cc6ef">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:project_production</jdbc-url>
+      <jdbc-url>jdbc:postgresql:ddjftju9i27pho</jdbc-url>
       <user-name>johann</user-name>
       <libraries />
     </data-source>
