@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'http://gems.github.com'
 
 gem 'tomz-libsvm-ruby-swig'
 gem 'libsvm-ruby-swig'
