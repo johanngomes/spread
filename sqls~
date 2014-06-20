@@ -1,0 +1,5 @@
+CREATE TABLE palavra(
+   ID  SERIAL PRIMARY KEY,
+   palavrachave TEXT NOT NULL,
+   classe TEXT NOT NULL
+);

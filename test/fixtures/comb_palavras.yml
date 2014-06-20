@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_palavrachave_1: 
+  id_palavrachave_2: 
+  classe: MyString
+
+two:
+  id_palavrachave_1: 
+  id_palavrachave_2: 
+  classe: MyString

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Denuncie</title>
+
+  <!-- Bootstrap -->
+  <link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron header-logo">
+    <div class="pos-logo">
+      <span class="glyphicon glyphicon-bullhorn"><h1>BNT</h1></span>
+    </div>
+  </div>
+  <hr style="margin-top: -26px;"><br>
+  <div class="container-divs">
+    <form class="form-horizontal" role="form" method="post" action="/contato">
+      <div class="form-group">
+        A denúncia foi categorizada como: <%= @prediction %>
+      </div>
+      <div class="bt-ContDen">
+        <input type="submit" class="btn btn-danger bt-ContDen" value="Enviar denúncia ao órgão responsável">
+      </div>
+    </form>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  onde: MyString
+  quando: MyString
+  descricao: MyString
+  id_usuario: 1
+  classe: MyString
+
+two:
+  onde: MyString
+  quando: MyString
+  descricao: MyString
+  id_usuario: 1
+  classe: MyString

@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'tomz-libsvm-ruby-swig'
+gem 'libsvm-ruby-swig'
+gem 'gmail'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
@@ -39,4 +42,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
+
+gem 'simple_form'
+
 
