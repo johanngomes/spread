@@ -14,11 +14,6 @@ support vector machine, k-nearest neighbor, random forest
 
 == README
 
-The implemented software enables victims of discrimination, to write
-complaints through an application that makes this process easier and
-faster, using an algorithm to categorize the type of discrimination it
-represents, automatically, by text mining (Text-based Mining).
-
 Requires:
 
 Ruby 2.0.x
@@ -36,7 +31,10 @@ http://www.postgresql.org/
 Lib SVM for Ruby
 libsvm-ruby-swig https://rubygems.org/
 
+== DEMONSTRATION VIDEOS
+
 The application was nicknamed "Boca No Trombone", for use in Brazil. A video showing it's use is shown in the link below:
 
-Boca no Trombone - Aplicação: https://www.youtube.com/watch?v=ZnSO5y5pqV4
-Boca no Trombone - Banco de Dados: https://www.youtube.com/watch?v=dpxzIHwqsLs
+Boca no Trombone - Running code: https://www.youtube.com/watch?v=ZnSO5y5pqV4
+
+Boca no Trombone - Database: https://www.youtube.com/watch?v=dpxzIHwqsLs
