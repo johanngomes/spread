@@ -1,5 +1,4 @@
 require 'svm'
-require 'gmail'
 
 class DenunciaController < ApplicationController
 
@@ -11,12 +10,9 @@ class DenunciaController < ApplicationController
 
   @@model
 
-  @@prediction
-
   @@gmailAccount = {'username' => 'bnt.mailing@gmail.com', 'password' => 'bocanotrombone'}
 
   def new
-
   end
 
   def personal
@@ -43,24 +39,9 @@ class DenunciaController < ApplicationController
 
     @@denuncia.save
 
-    #trainSVMModel
-    #predictClass(@@denuncia_data['descricao'])
-    @prediction = 'Homofobia'
-    @@prediction = @prediction
-  end
-
-  def contato
-    gmail = Gmail.connect(@@gmailAccount['username'], @@gmailAccount['password'])
-
-    gmail.deliver do
-      to "johanngomes@gmail.com"
-      subject "Teste de e-mail usando a gem"
-      html_part do
-        body "<p>Parte da mensagem com <strong>texto formatado</strong> em <em>html</em>.</p>"
-      end
-    end
-
-    gmail.logout
+    trainSVMModel
+    puts 'Denuncia data: ', @@denuncia_data['descricao']
+    @prediction = predictClass(@@denuncia_data['descricao'])
   end
 
   def trainSVMModel
@@ -75,12 +56,17 @@ class DenunciaController < ApplicationController
                   'educacao' => 9, 'digital' => 10,
                   'castas' => 11}
 
+    puts 'begin-'
     combPalavra.each do |comb|
+      puts '[' + comb.id_palavrachave_1.to_s + ',' + comb.id_palavrachave_2.to_s + '], '
       combs << [comb.id_palavrachave_1, comb.id_palavrachave_2]
       classes << classesNum[comb.classe]
     end
+    puts 'end-'
 
-    puts classes, combs
+    puts 'classes', classes
+    puts 'combs', combs
+
     prob = Problem.new(classes, combs)
     param = Parameter.new(:kernel_type => LINEAR, :C => 10)
     @@model = Model.new(prob,param)
@@ -98,6 +84,8 @@ class DenunciaController < ApplicationController
       end
     end
 
+    puts 'A descrição é: ', descricao, 'As palavras identificadas foram: ', palavrasId.to_s
+
     classesNumReverse = {1 => 'Machismo', 2 => 'Homofobia',
                          3 => 'Racismo de cor', 4 => 'Racismo xenófobo',
                          5 => 'Problema na área de saúde', 6 => 'Desigualdade social não detectada',
@@ -105,7 +93,6 @@ class DenunciaController < ApplicationController
                          9 => 'Desigualdade educacional', 10 => 'Desigualdade digital',
                          11 => 'Desigualdade baseada em castas'}
 
-   @@prediction = classesNumReverse[@@model.predict(palavrasId).to_i]
-   puts 'prediction', @@prediction
+    return  classesNumReverse[@@model.predict(palavrasId).to_i]
   end
 end
