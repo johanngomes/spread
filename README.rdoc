@@ -1,27 +1,31 @@
+Social inequality occurs when a group limit, reproach, discriminate and / or affect the status
+of another group, class or social circle, decreasing their access to their fundamental freedoms,
+depriving them of their rights assured as humans. Software, acting as a game-changer in
+our society, have great potential to produce a positive social impact and can even reduce
+inequality through social justice, considering its ubiquity in the modern world. This work,
+aims to bring relevant social change to communities through technology. 
+
+The implemented software enables victims of discrimination, to write complaints through an application that
+makes this process easier and faster, using an algorithm to categorize the type of discrim-
+ination it represents, automatically, by text mining (Text-based Mining). 
+
+Keywords: social inequality, social impact software, classification algorithms, machine learning, 
+support vector machine, k-nearest neighbor, random forest
+
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The implemented software enables victims of discrimination, to write
+complaints through an application that makes this process easier and
+faster, using an algorithm to categorize the type of discrimination it
+represents, automatically, by text mining (Text-based Mining).
 
-Things you may want to cover:
+Requires:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ruby 2.0.x: https://www.ruby-lang.org/en
+Ruby on Rails 4.x: http://rubyonrails.org/
+Lib CSS Bootstrap 3.2.0: http://getbootstrap.com/
+SGBD PostgreSQL 9.4: http://www.postgresql.org/
+Lib SVM for Ruby: libsvm-ruby-swig https://rubygems.org/
 
 
 Please feel free to use a different markup language if you do not plan to run
