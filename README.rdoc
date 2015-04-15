@@ -21,12 +21,22 @@ represents, automatically, by text mining (Text-based Mining).
 
 Requires:
 
-Ruby 2.0.x: https://www.ruby-lang.org/en
-Ruby on Rails 4.x: http://rubyonrails.org/
-Lib CSS Bootstrap 3.2.0: http://getbootstrap.com/
-SGBD PostgreSQL 9.4: http://www.postgresql.org/
-Lib SVM for Ruby: libsvm-ruby-swig https://rubygems.org/
+Ruby 2.0.x
+https://www.ruby-lang.org/en
 
+Ruby on Rails 4.x
+http://rubyonrails.org/
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Lib CSS Bootstrap 3.2.0
+http://getbootstrap.com/
+
+SGBD PostgreSQL 9.4
+http://www.postgresql.org/
+
+Lib SVM for Ruby
+libsvm-ruby-swig https://rubygems.org/
+
+The application was nicknamed "Boca No Trombone", for use in Brazil. A video showing it's use is shown in the link below:
+
+Boca no Trombone - Aplicação: https://www.youtube.com/watch?v=ZnSO5y5pqV4
+Boca no Trombone - Banco de Dados: https://www.youtube.com/watch?v=dpxzIHwqsLs
