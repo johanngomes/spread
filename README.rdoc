@@ -38,3 +38,9 @@ The application was nicknamed "Boca No Trombone", for use in Brazil. A video sho
 Boca no Trombone - Running code: https://www.youtube.com/watch?v=ZnSO5y5pqV4
 
 Boca no Trombone - Database: https://www.youtube.com/watch?v=dpxzIHwqsLs
+
+== CHECK THE ARTICLE :)
+
+This project idealized a monograph, submited and presented as an Undergraduation Course Conclusion Work for Bachelor in Information System at UFRPE in Brazil. 
+
+The monograph (alias: dissertation) is in the root folder of this project, in .PDF format ("Uma Aplicação de Impacto Social Com Aprendizagem de Máquina.PDF").
